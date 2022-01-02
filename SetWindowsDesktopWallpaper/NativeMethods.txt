@@ -1,0 +1,6 @@
+// NB this file is handled by the Microsoft.Windows.CsWin32 package source generator from:
+//          https://github.com/microsoft/CsWin32/blob/v0.1.619-beta/src/Microsoft.Windows.CsWin32/SourceGenerator.cs#L20
+
+// namespace Windows.Win32.UI.Shell:
+DesktopWallpaper
+IDesktopWallpaper
