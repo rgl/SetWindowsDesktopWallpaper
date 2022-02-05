@@ -13,8 +13,6 @@ namespace SetWindowsDesktopWallpaper
     {
         static void Main(string[] args)
         {
-            // NB this requires a daily build of Microsoft.Windows.CsWin32.
-            //    see https://github.com/microsoft/CsWin32/issues/473
             var desktopWallpaper = (IDesktopWallpaper)new DesktopWallpaper();
 
             SystemEvents.DisplaySettingsChanged += (sender, e) =>
