@@ -35,11 +35,11 @@ namespace SetWindowsDesktopWallpaper
             desktopWallpaper.GetBackgroundColor(out uint backgroundColorNative);
             var backgroundColor = new SKColor(backgroundColorNative);
             desktopWallpaper.GetPosition(out DESKTOP_WALLPAPER_POSITION position);
+            desktopWallpaper.GetMonitorDevicePathCount(out uint monitorCount);
 
+            Console.WriteLine("Displays Count={0}", monitorCount);
             Console.WriteLine("Wallpaper BackgroundColor={0}", backgroundColor);
             Console.WriteLine("Wallpaper Position={0}", position);
-
-            desktopWallpaper.GetMonitorDevicePathCount(out uint monitorCount);
 
             for (uint monitorIndex = 0; monitorIndex < monitorCount; ++monitorIndex)
             {
